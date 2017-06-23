@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700");
+h1, h2, h3, #block-whales-main-menu, .block.bundle-hero .field--name-field-hero-text, .block.bundle-hero .field--name-field-hero-link a, #block-whales-views-block-news-block-1 h2, #block-whales-views-block-news-block-1 .views-field-title a, .view-id-our_team.view-display-id-page_1 .views-field-title, .paragraph--type--cta .field--name-field-cta-link .field__item a {
+  font-family: Oswald, Sans-Serif; }
+
+html {
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #eeeeee; }
+
+body > .layout-container {
+  background-color: white;
+  max-width: 980px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 2px 2px #888888; }
+  body > .layout-container > * {
+    padding: 0 1em; }
+
+header[role="banner"] {
+  background-color: #004258;
+  padding: 1em; }
+
+#block-whales-branding {
+  max-width: 50%; }
+
+#block-whales-main-menu {
+  float: right;
+  max-width: 50%;
+  text-align: right; }
+  #block-whales-main-menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase; }
+    #block-whales-main-menu a:hover {
+      text-decoration: underline; }
+  #block-whales-main-menu ul.menu {
+    text-align: right; }
+    #block-whales-main-menu ul.menu li {
+      margin-right: 2em;
+      display: inline; }
+
+#block-whales-page-title {
+  text-align: center;
+  color: #00536b;
+  text-transform: uppercase; }
+
+body.with-sidebar main[role="main"]:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+body.with-sidebar main[role="main"] > .layout-content {
+  width: 55%;
+  padding-right: 5%;
+  float: left; }
+
+body.with-sidebar main[role="main"] aside.layout-sidebar-first {
+  width: 40%;
+  float: left; }
+
+footer[role="contentinfo"] {
+  background-color: #004258;
+  color: white;
+  text-align: center;
+  padding: .5em 1em 0 0; }
+
+div.messages {
+  margin-bottom: 1em; }
+
+.block.bundle-hero {
+  position: relative;
+  height: 250px;
+  color: white; }
+  .block.bundle-hero img {
+    max-width: 980px;
+    height: auto;
+    margin: 0 -2em 0 -1em; }
+  .block.bundle-hero .field {
+    position: absolute; }
+  .block.bundle-hero .field--name-field-hero-text {
+    font-size: 60px;
+    line-height: 120px; }
+  .block.bundle-hero .field--name-body {
+    top: 30%;
+    max-width: 70%; }
+  .block.bundle-hero .field--name-field-hero-link {
+    bottom: 1em; }
+    .block.bundle-hero .field--name-field-hero-link a {
+      display: inline-block;
+      border: 1px solid white;
+      background-color: #006db7;
+      color: white;
+      padding: 1em;
+      text-decoration: none; }
+      .block.bundle-hero .field--name-field-hero-link a:hover {
+        text-decoration: underline;
+        background-color: #003051; }
+
+#block-whales-views-block-news-block-1 h2 {
+  font-size: 80px;
+  color: #999999;
+  margin-top: 0;
+  margin-bottom: .25rem; }
+
+#block-whales-views-block-news-block-1 .views-row {
+  margin-bottom: 1em; }
+
+#block-whales-views-block-news-block-1 .views-field-field-publication-date {
+  font-size: 15px;
+  color: #999999; }
+
+#block-whales-views-block-news-block-1 .views-field-title a {
+  color: #006db7;
+  font-size: 20px;
+  text-decoration: none; }
+  #block-whales-views-block-news-block-1 .views-field-title a a:hover {
+    text-decoration: underline; }
+
+.view-id-our_team.view-display-id-page_1:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+.view-id-our_team.view-display-id-page_1 .views-row {
+  float: left;
+  width: 33%;
+  min-height: 480px; }
+
+.view-id-our_team.view-display-id-page_1 .views-field-title, .view-id-our_team.view-display-id-page_1 .views-field-field-job-title {
+  text-align: center; }
+
+.view-id-our_team.view-display-id-page_1 .views-field-title {
+  font-size: 48px;
+  color: #006db7; }
+
+.view-id-our_team.view-display-id-page_1 .views-field-field-job-title {
+  font-size: 40px;
+  margin-bottom: 1em; }
+
+/**
+Paragraphs - comments in block syntax
+pass through to the underlying compiled css.
+**/
+.paragraph--type--image-and-text .field--name-field-image {
+  width: 50%;
+  float: left;
+  padding: 0 1em 1em 0; }
+
+.paragraph--type--cta {
+  background-color: #e6e6e6;
+  margin-left: -1em;
+  margin-right: -1em;
+  text-align: center; }
+  .paragraph--type--cta .field--name-field-title {
+    color: #004258;
+    font-size: 2em;
+    font-weight: 700;
+    padding-top: .75em; }
+  .paragraph--type--cta .field--name-field-subtitle {
+    font-size: 1.5em; }
+  .paragraph--type--cta .field--name-field-cta-link .field__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2em 0 2.5em 0; }
+  .paragraph--type--cta .field--name-field-cta-link .field__item:hover {
+    background-color: #004258; }
+  .paragraph--type--cta .field--name-field-cta-link .field__item:not(:last-child) {
+    margin-right: 2em; }
+  .paragraph--type--cta .field--name-field-cta-link .field__item a {
+    text-transform: uppercase;
+    display: inline-block;
+    border: 1px solid white;
+    background-color: #006db7;
+    color: white;
+    padding: 1em;
+    text-decoration: none; }
+    .paragraph--type--cta .field--name-field-cta-link .field__item a:hover {
+      text-decoration: underline;
+      background-color: #003051; }
+
+/*# sourceMappingURL=style.css.map */
