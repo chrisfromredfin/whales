@@ -1,0 +1,59 @@
+/**
+Paragraphs - comments in block syntax
+pass through to the underlying compiled css.
+**/
+
+// NOTE: inline comments do not, since they are not valid CSS comments. Sass-only.
+
+// Image and text paragraph
+.paragraph--type--image-and-text {
+  .field--name-field-image {
+    width: 50%;
+    float: left;
+    padding: 0 1em 1em 0;
+  }
+}
+
+// Call to Action paragraph
+.paragraph--type--cta {
+  background-color: #e6e6e6;
+  margin-left: -1em;
+  margin-right: -1em;
+  text-align: center;
+
+  .field--name-field-title {
+    color: #004258;
+    font-size: 2em;
+    font-weight: 700;
+    padding-top: .75em;
+  }
+
+  .field--name-field-subtitle {
+    font-size: 1.5em;
+  }
+
+  .field--name-field-cta-link {
+
+    .field__items {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 2em 0 2.5em 0;
+    }
+
+    .field__item:hover {
+      background-color: #004258;
+    }
+
+    .field__item:not(:last-child) {
+      margin-right: 2em;
+    }
+
+    .field__item a {
+      text-transform: uppercase;
+      @include a-button($french_blue);
+    }
+  }
+}
+
+

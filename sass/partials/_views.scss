@@ -1,0 +1,60 @@
+// News Block
+#block-whales-views-block-news-block-1 {
+  h2 {
+    //oswald bold 80 aluminum;
+    @extend %oswald;
+    font-size: 80px;
+    color: $aluminum;
+    margin-top: 0;
+    margin-bottom: .25rem;
+  }
+
+  .views-row {
+    margin-bottom: 1em;
+  }
+
+  // Date
+  .views-field-field-publication-date {
+    font-size: 15px;
+    color: $aluminum;
+  }
+
+  .views-field-title {
+    a {
+      color: $french_blue;
+      @extend %oswald;
+      font-size: 20px;
+      text-decoration: none;
+      
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Our Team Page
+.view-id-our_team.view-display-id-page_1 {
+  @include clearfix();
+
+  .views-row {
+    float: left;
+    width: 33%;
+    min-height: 480px;
+  }
+
+  .views-field-title, .views-field-field-job-title {
+    text-align: center;
+  }
+
+  .views-field-title {
+    @extend %oswald;
+    font-size: 48px;
+    color: $french_blue;
+  }
+
+  .views-field-field-job-title {
+    font-size: 40px;
+    margin-bottom: 1em;
+  }
+}

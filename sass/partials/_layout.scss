@@ -1,0 +1,83 @@
+
+html {
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #eeeeee;
+}
+
+h1, h2, h3 {
+  @extend %oswald;
+}
+
+body > .layout-container {
+  background-color: white;
+  max-width: 980px;
+  margin: 0 auto;
+
+  & > * {
+    padding: 0 1em;
+  }
+
+  box-shadow: 0px 2px 2px 2px #888888;
+}
+
+header[role="banner"] {
+  background-color: $teal_blue;
+  padding: 1em;
+}
+#block-whales-branding {
+  max-width: 50%;
+}
+#block-whales-main-menu {
+  @extend %oswald;
+  float: right;
+  max-width: 50%;
+  text-align: right;
+  a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul.menu {
+    text-align: right;
+    li {
+      margin-right: 2em;
+      display: inline;
+    }
+  }
+}
+
+#block-whales-page-title {
+  text-align: center;
+  color: $blue_lagoon;
+  text-transform: uppercase;
+}
+
+body.with-sidebar main[role="main"] {
+  @include clearfix();
+  & > .layout-content {
+    width: 55%;
+    padding-right: 5%;
+    float: left;
+  }
+
+  aside.layout-sidebar-first {
+    width: 40%;
+    float: left;
+  }
+}
+
+footer[role="contentinfo"] {
+  background-color: $teal_blue;
+  color: white;
+  text-align: center;
+  padding: .5em 1em 0 0;
+}
+
+div.messages {
+  margin-bottom: 1em;
+}
