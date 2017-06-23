@@ -1,0 +1,13 @@
+<?php
+// See https://www.drupal.org/node/2460893#comment-10766412
+
+/**
+* Implements hook_theme_suggestions_HOOK_alter() for form templates.
+* @param array $suggestions
+* @param array $variables
+*/
+function whales_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  if (isset($variables['elements']['content']['#block_content'])) {
+    array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
+  }
+}
